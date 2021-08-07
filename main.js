@@ -8,7 +8,8 @@ const changeColor = (e) => {
 
 for (let i = 0; i < gridCellAmount * gridCellAmount; i++) {
   const cell = document.createElement("div");
-  cell.addEventListener("mousedown", changeColor);
+  //   cell.addEventListener("mousedown", changeColor);
+  cell.addEventListener("mouseover", changeColor);
   cell.classList.add("border-top-left");
   cell.classList.add("grid-item");
   grid.appendChild(cell);
